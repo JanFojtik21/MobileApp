@@ -1,0 +1,41 @@
+#tab1\.welcome_msg{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ion-content.custom-content {
+    --background: url(../../assets/background.jpg) no-repeat center center / cover !important;
+}
+
+ion-toolbar {
+    --background: transparent;
+}
+
+#searchbar{
+    --background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:50px;
+}
+
+#tab1\.picker{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#footer{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 550px;
+}

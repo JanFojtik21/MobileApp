@@ -1,17 +1,30 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Weather Conditions
+      Weather App
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding custom-content"> 
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">WeatherApp</ion-title>
+
+
+      <ion-title id = "tab1.welcome_msg"size="small">Welcome to the Weather Application</ion-title>
+
+      <ion-searchbar [debounce]="10" (ionInput)="handleInput($event)"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="let result of results" (click)="itemClicked(result)">
+          <ion-label>{{ result }}</ion-label>
+        </ion-item>
+      </ion-list>
+     
+
+      
       
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Weather"></app-explore-container>
+  <footer id = "footer">Made by dev Jan Fojtik</footer>
 </ion-content>
