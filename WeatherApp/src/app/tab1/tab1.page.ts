@@ -43,6 +43,6 @@ export class Tab1Page {
 
   itemClicked(result: string) {
     console.log('Clicked on:', result);
-    // Zde můžete přidat kód, který se spustí, když na položku kliknete
+    // Zde bude kód, který se spustí, když na položku kliknu
   }
 }
